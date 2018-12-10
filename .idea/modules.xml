@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ITJ.iml" filepath="$PROJECT_DIR$/.idea/ITJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itj_commons/itj_commons.iml" filepath="$PROJECT_DIR$/itj_commons/itj_commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itj_manager/itj_manager.iml" filepath="$PROJECT_DIR$/itj_manager/itj_manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itj_manager/itj_manager_dao/itj_manager_dao.iml" filepath="$PROJECT_DIR$/itj_manager/itj_manager_dao/itj_manager_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itj_manager/itj_manager_entity/itj_manager_entity.iml" filepath="$PROJECT_DIR$/itj_manager/itj_manager_entity/itj_manager_entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itj_manager/itj_manager_service/itj_manager_service.iml" filepath="$PROJECT_DIR$/itj_manager/itj_manager_service/itj_manager_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itj_manager/itj_manager_web/itj_manager_web.iml" filepath="$PROJECT_DIR$/itj_manager/itj_manager_web/itj_manager_web.iml" />
+    </modules>
+  </component>
+</project>

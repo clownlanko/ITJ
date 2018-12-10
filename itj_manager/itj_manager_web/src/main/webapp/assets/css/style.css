@@ -79,6 +79,11 @@ a:hover {
 	margin-top: -280px;
 	margin-left: 750px;
 }
+#account{
+    background-image: url("../../img/account.png");
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+}
 /* ----- Registration Form ----- */
 .register span img{
 	clear: both;
@@ -222,13 +227,6 @@ a:hover {
 
 /* ----- Media queries ----- */
 
-@media (max-width: 1200px) {
-
-	.register form h2 {
-		background: url(../img/pencil.png) 20px 6px no-repeat;
-	}
-
-}
 
 @media (min-width: 768px) and (max-width: 979px) {
 

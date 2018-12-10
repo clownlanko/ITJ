@@ -32,7 +32,7 @@
         <p>那就做好万箭穿心的准备</p>
     </div>
     <div class="register span6">
-        <form action="user.itj/register.itj" method="post" enctype="multipart/form-data">
+        <form method="post" action="user.itj/register.itj" enctype="multipart/form-data">
             <h2>REGISTER TO <span class="red"><strong>ITJ</strong></span></h2>
             <span>
                 <img src="img/avatar.jpg" onclick="selectFile()"/>
@@ -55,6 +55,7 @@
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.backstretch.min.js"></script>
 <script src="assets/js/scripts.js"></script>
+<script src="assets/layer/layer.js"></script>
 </body>
 <script>
     function selectFile() {

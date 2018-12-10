@@ -6,4 +6,9 @@
       INSERT INTO itj_user(account, password, nickname, head_photo, autograph,join_time,modify_time)
       VALUES(#{account},#{password},#{nickname},#{headPhoto},#{autograph},#{joinTime},#{modifyTime});
     </insert>
+    <select id="queryByAccount" parameterType="java.lang.String" resultType="top.genitalbean.itj.pojo.UserEntity">
+        SELECT account, password, nickname, head_photo AS headPhoto, autograph,
+        join_time AS joinTime,modify_time AS modifyTime FROM itj_user
+        WHERE account=#{account};
+    </select>
 </mapper>

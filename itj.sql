@@ -13,7 +13,8 @@
 
  Date: 10/12/2018 01:38:35
 */
-
+create database itj default charset=utf8;
+use itj;
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
