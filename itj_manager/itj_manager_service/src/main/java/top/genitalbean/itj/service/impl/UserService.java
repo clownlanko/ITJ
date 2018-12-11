@@ -52,4 +52,12 @@ public class UserService implements BaseService {
         }
         return user;
     }
+    @Transactional(readOnly = true,rollbackFor = NoDataMatchException.class)
+    public UserEntity queryByUser(String account,String password) throws NoDataMatchException{
+        UserEntity user = userMapper.queryByUser(account,password);
+        if(user==null){
+            throw new NoDataMatchException("No user of named "+account);
+        }
+        return user;
+    }
 }

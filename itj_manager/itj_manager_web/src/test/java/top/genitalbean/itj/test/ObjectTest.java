@@ -1,5 +1,6 @@
 package top.genitalbean.itj.test;
 
+import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,15 @@ public class ObjectTest {
     UserService userService;
     @Test
     public void test(){
-        System.out.println(userService.queryByAccount("admin"));
+        System.out.println(cc());
+    }
+
+    public int cc(){
+        try{
+
+            return 1;//2
+        }finally {
+            return 2;
+        }
     }
 }

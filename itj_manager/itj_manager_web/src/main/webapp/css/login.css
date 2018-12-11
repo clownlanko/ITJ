@@ -278,7 +278,7 @@ form {
 	border-radius: 0.3em;
 	-o-border-radius: 0.3em;
 	-moz-border-radius: 0.3em;
-	-webkit- border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
 	margin: 0.7em 0;
 	background: url(../img/account.png) no-repeat 15px 10px #474a55;
 	background-size: 30px 30px;
@@ -508,12 +508,10 @@ input[type="submit"]:hover {
 		width: 68%;
 		padding: 1em 1em 1em 4em;
 		font-size: 15px;
-		background: url("../images/icons.png") no-repeat 14px 17px #474a55;
 		background-size: 11%;
 	}
 
 	.app-location input[type="password"] {
-		background: url("../images/icons.png") no-repeat 14px -41px #474a55;
 		background-size: 11%;
 	}
 
