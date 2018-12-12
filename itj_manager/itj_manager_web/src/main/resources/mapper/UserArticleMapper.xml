@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//ibatis.apache.org/DTD Mapper 3.0//EN"
         "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
-<mapper namespace="">
-    <select id="">
-        SELECT itja.user_id AS userId,
-        account,head_photo AS headPhoto,title,content,like_quantity AS likeQuantity,
-        look_quantity AS lookQuantity,tag_name AS tagName
-        FROM itj_article itja
-        INNER JOIN itj_article_tag itjat
-        ON itja.article_id=itjat.article_id
-        INNER JOIN itj_tag itjt
-        ON itjat.tag_id=itjt.tag_id
-        INNER JOIN itj_user itju
-        ON itju.user_id=itja.user_id;
-    </select>
+<mapper namespace="top.genitalbean.itj.dao.mapper.UserArticleMapper">
+    <!--<select id="findByAccountOrTitle">-->
+        <!--SELECT itja.user_id AS userId,-->
+        <!--account,head_photo AS headPhoto,title,content,like_quantity AS likeQuantity,-->
+        <!--look_quantity AS lookQuantity,tag_name AS tagName-->
+        <!--FROM itj_article itja-->
+        <!--INNER JOIN itj_article_tag itjat-->
+        <!--ON itja.article_id=itjat.article_id-->
+        <!--INNER JOIN itj_tag itjt-->
+        <!--ON itjat.tag_id=itjt.tag_id-->
+        <!--INNER JOIN itj_user itju-->
+        <!--ON itju.user_id=itja.user_id;-->
+    <!--</select>-->
 </mapper>

@@ -12,7 +12,7 @@
         <ul>
             <li><a href="">主页</a></li>
             <li><a href="">博客管理</a></li>
-            <li><a href="">写博客</a></li>
+            <li><a href="${pageContext.request.contextPath}/view/edit.jsp">写博客</a></li>
             <li>
                 <a class="owner-center" href="">个人中心</a>
                 <ul class="owner">
