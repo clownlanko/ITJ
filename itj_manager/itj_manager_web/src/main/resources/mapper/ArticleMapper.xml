@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org/DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="top.genitalbean.itj.dao.mapper.ArticleMapper">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="articleId" parameterType="top.genitalbean.itj.pojo.ArticleEntity">
+        INSERT INTO itj_article(user_id, title, content, like_quantity, look_quantity,create_time,modify_time)
+        VALUES (#{userId},#{title},#{content},0,0,#{createTime},#{modifyTime});
+    </insert>
+</mapper>

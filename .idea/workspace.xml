@@ -7,13 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="630790a8-fcf9-457e-b91d-0b7c32bc0d82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/edit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/save.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/showdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/mapper/ArticleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_entity/src/main/java/top/genitalbean/itj/pojo/ArticleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/ArticleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/ArticleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/jquery-2.1.4.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ITJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ITJ.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/itj_manager_web_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/itj_manager_web_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/itj_manager_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/itj_manager_web_war_exploded.xml" afterDir="false" />
@@ -54,17 +54,118 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj.sql" beforeDir="false" afterPath="$PROJECT_DIR$/itj.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_commons/itj_commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_commons/itj_commons.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_dao/itj_manager_dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_dao/itj_manager_dao.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_entity/itj_manager_entity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_entity/itj_manager_entity.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_service/itj_manager_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_service/itj_manager_service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/itj_manager_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/itj_manager_web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/UserArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/UserArticleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/zero.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/zero.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/bootstrap/img/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/bootstrap/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/bootstrap/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/img/backgrounds/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/backgrounds/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/img/backgrounds/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/backgrounds/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/img/backgrounds/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/backgrounds/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/img/blog.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/blog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/img/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/img/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/img/pattern.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/pattern.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/js/jquery-1.8.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/js/jquery.backstretch.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/jquery.backstretch.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/layer/extend/layer.ext.js" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/extend/layer.ext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/layer/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/layer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/layer/skin/default/icon-ext.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/skin/default/icon-ext.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/layer/skin/default/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/skin/default/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/layer/skin/default/loading-0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/skin/default/loading-0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/layer/skin/default/loading-1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/skin/default/loading-1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/layer/skin/default/loading-2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/skin/default/loading-2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/layer/skin/layer.css" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/skin/layer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/layer/skin/layer.ext.css" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/skin/layer.ext.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/edit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/zero.css" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/zero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/account.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/account.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/add.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/add.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/avatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/back.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/back.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/banner.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/comment.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/comment.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/icons.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/like.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/like.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/location.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/location.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/look.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/look.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/password.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/password.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/save.png" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/save.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/thumbnail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/thumbnail.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/showdown.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/showdown.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/user_img/readme" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/user_img/readme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/test/java/top/genitalbean/itj/test/ObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/test/java/top/genitalbean/itj/test/ObjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/classes/spring/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/classes/spring/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/WEB-INF/classes/META-INF/itj_manager_web.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/WEB-INF/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/WEB-INF/classes/spring/spring-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/bootstrap/img/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/bootstrap/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/bootstrap/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/img/backgrounds/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/img/backgrounds/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/img/backgrounds/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/img/blog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/img/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/img/pattern.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/js/jquery-1.8.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/js/jquery.backstretch.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/assets/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/img/account.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/img/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/img/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/img/comment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/img/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/img/like.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/img/location.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/img/look.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/img/password.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/img/thumbnail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/view/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/view/register.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/itj_manager/itj_manager_entity/target/" />
     <ignored path="$PROJECT_DIR$/itj_manager/itj_manager_service/target/" />
@@ -90,7 +191,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - itj@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - itj@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - itj@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="itj: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="ExecutionTargetDialog">
@@ -98,69 +215,90 @@
       <node key="65f778a2-cec5-400b-8ed4-4a7bce535384" />
     </checked>
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1795320084">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="2" />
+          <entry key="gif" value="3" />
+          <entry key="groovy" value="1" />
+          <entry key="itj_article" value="1" />
+          <entry key="itj_article_tag" value="1" />
+          <entry key="itj_tag" value="1" />
+          <entry key="java" value="29" />
+          <entry key="jpeg" value="1" />
+          <entry key="js" value="2" />
+          <entry key="jsp" value="13" />
+          <entry key="png" value="2" />
+          <entry key="properties" value="1" />
+          <entry key="readme" value="1" />
+          <entry key="sql" value="6" />
+          <entry key="xml" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="2" />
+          <entry key="Database Element" value="3" />
+          <entry key="Image" value="6" />
+          <entry key="JAVA" value="29" />
+          <entry key="JSP" value="13" />
+          <entry key="JavaScript" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="1" />
+          <entry key="SQL" value="5" />
+          <entry key="Scratch" value="2" />
+          <entry key="XML" value="16" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="6" />
+          <entry key="java" value="1200" />
+          <entry key="js" value="42" />
+          <entry key="jsp" value="1164" />
+          <entry key="sql" value="91" />
+          <entry key="xml" value="219" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1200" />
+          <entry key="JSP" value="1164" />
+          <entry key="JavaScript" value="42" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="SQL" value="11" />
+          <entry key="Scratch" value="81" />
+          <entry key="XML" value="218" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/UserController.java">
+        <entry file="das://65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_user.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-              <folding>
-                <element signature="n#filter#0;n#web-app#0;n#!!top" />
-                <element signature="n#filter-mapping#0;n#web-app#0;n#!!top" />
-                <element signature="n#context-param#0;n#web-app#0;n#!!top" />
-                <element signature="n#listener#0;n#web-app#0;n#!!top" />
-                <element signature="n#servlet#0;n#web-app#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/zero.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+            <state relative-caret-position="158">
+              <caret line="26" column="36" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="26" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/edit.jsp">
+        <entry file="file://$PROJECT_DIR$/itj.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding>
-                <element signature="e#723#729#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="264">
+              <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/mapper/UserArticleMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/65f778a2-cec5-400b-8ed4-4a7bce535384/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -168,10 +306,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
-        <option value="Class" />
-        <option value="MyBatis" />
         <option value="jsp" />
+        <option value="MyBatis" />
+        <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -186,36 +324,54 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/itj.sql" />
         <option value="$PROJECT_DIR$/itj_commons/src/main/java/top/genitalbean/itj/commons/util/DigestContent.java" />
         <option value="$PROJECT_DIR$/itj_commons/src/main/java/top/genitalbean/itj/commons/util/FileUpload.java" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/util/FileUpload.java" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/user_img/readme" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/WebApplicationController.java" />
-        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-config.xml" />
-        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/RegisterController.java" />
-        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/test/java/top/genitalbean/itj/test/ObjectTest.java" />
-        <option value="$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/UserService.java" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_entity/src/main/java/top/genitalbean/itj/pojo/UserEntity.java" />
-        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/register.jsp" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/login.css" />
-        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/login.jsp" />
-        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/UserController.java" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_entity/src/main/java/top/genitalbean/itj/pojo/vo/UserArticleVO.java" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/mapper/UserArticleMapper.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/65f778a2-cec5-400b-8ed4-4a7bce535384/console.sql" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/UserArticleMapper.xml" />
-        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/BaseController.java" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/zero.jsp" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/mapper/ArticleMapper.java" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/ArticleMapper.xml" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/test/java/top/genitalbean/itj/test/ObjectTest.java" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/login.jsp" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/register.jsp" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/js/scripts.js" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/UserService.java" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/ArticleService.java" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-config.xml" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/test.jsp" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_entity/src/main/java/top/genitalbean/itj/pojo/ArticleEntity.java" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/edit.jsp" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/ArticleController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/65f778a2-cec5-400b-8ed4-4a7bce535384/console.sql" />
+        <option value="65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_article.sql" />
+        <option value="65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_article_tag.sql" />
+        <option value="65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_tag.sql" />
+        <option value="65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_user.sql" />
+        <option value="$PROJECT_DIR$/itj.sql" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -227,8 +383,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../DeveloperSoftware/apache-maven-3.6.0" />
-        <option name="userSettingsFile" value="E:\DeveloperSoftware\apache-maven-3.6.0\conf\settings.xml" />
+        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.6.0/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -239,7 +395,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ITJ" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ITJ" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -266,90 +432,6 @@
               <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="ITJ" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -362,9 +444,9 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544601734306" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IdeaProject" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544631818413" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -373,12 +455,16 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources" />
+      <recent name="$PROJECT_DIR$/itj_manager/itj_manager_web" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources" />
+      <recent name="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp" />
+      <recent name="backgrounds css img js layer user_img" />
       <recent name="E:\ITJ\itj_manager\itj_manager_web\src\main\webapp\img" />
       <recent name="E:\ITJ\itj_manager\itj_manager_web\src\main\webapp\js" />
-      <recent name="E:\ITJ\itj_manager\itj_manager_web\src\main\webapp\css" />
-      <recent name="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -441,11 +527,11 @@
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_ITJ" />
       </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="34581" />
       </RunnerSettings>
@@ -502,9 +588,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Tomcat Server.ITJ" />
       <item itemvalue="JUnit.ObjectTest.test" />
       <item itemvalue="JUnit.ObjectTest.cc" />
-      <item itemvalue="Tomcat Server.ITJ" />
     </list>
     <recent_temporary>
       <list>
@@ -541,6 +627,7 @@
       <workItem from="1544491496613" duration="9534000" />
       <workItem from="1544478777737" duration="2937000" />
       <workItem from="1544597017886" duration="2717000" />
+      <workItem from="1544624118911" duration="6859000" />
     </task>
     <task id="LOCAL-00001" summary="项目第二天">
       <created>1544420742941</created>
@@ -560,12 +647,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObjectTest_test - 2018.12.10 at 19h 55m 57s.xml">
-      <configuration name="ObjectTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObjectTest_test - 2018.12.10 at 23h 05m 34s.xml">
-      <configuration name="ObjectTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ObjectTest_test - 2018.12.10 at 23h 06m 35s.xml">
       <configuration name="ObjectTest.test" configurationId="JUnit" />
     </history-entry>
@@ -590,9 +671,15 @@
     <history-entry file="ObjectTest_test - 2018.12.10 at 23h 14m 46s.xml">
       <configuration name="ObjectTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ObjectTest_test - 2018.12.12 at 17h 10m 41s.xml">
+      <configuration name="ObjectTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ObjectTest_test - 2018.12.12 at 17h 24m 26s.xml">
+      <configuration name="ObjectTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41454000" />
+    <option name="totallyTimeSpent" value="57369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -604,10 +691,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21331316" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24772727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -617,20 +704,20 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296355" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21290323" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924242" weight="0.2044374" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22345483" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3296355" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.11251981" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007576" side_tool="true" weight="0.39936608" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3296355" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.3296355" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.5911252" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.3296355" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.3296355" />
+      <window_info anchor="bottom" id="Database Console" order="14" sideWeight="0.49924242" visible="true" weight="0.3312203" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.09350238" />
       <window_info anchor="bottom" id="Java Enterprise" order="16" weight="0.3296355" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -640,156 +727,26 @@
       <window_info anchor="right" id="Maven" order="5" weight="0.32980332" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.3214826" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.18257576" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32954547" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目第二天" />
     <option name="LAST_COMMIT_MESSAGE" value="项目第二天" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/user_img/admin/1544413698352_19910.jpeg" />
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/user_img/admin/1544413827692_19910.jpeg" />
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/user_img/admin/1544413539374_19910.jpeg" />
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/user_img/admin/1544413628487_19910.jpeg" />
-    <entry file="jar:///usr/local/java/jdk1.8.0_191/src.zip!/java/lang/Number.java" />
-    <entry file="jar:///usr/local/java/jdk1.8.0_191/src.zip!/java/lang/Integer.java" />
-    <entry file="jar://$USER_HOME$/apache-maven-3.6.0/Repository/org/springframework/spring-tx/5.0.7.RELEASE/spring-tx-5.0.7.RELEASE.jar!/org/springframework/transaction/annotation/Propagation.class" />
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/user_img/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/user_img/readme" />
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/web.xml" />
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/WebApplicationController.java" />
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/img/home.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/img/pattern.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/img/login.png" />
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/account.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/password.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="126" column="36" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/RegisterController.java" />
-    <entry file="file://$PROJECT_DIR$/itj_commons/src/main/java/top/genitalbean/itj/commons/web/ResponseResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/jdk1.8.0_191/src.zip!/java/lang/RuntimeException.java" />
-    <entry file="file://$PROJECT_DIR$/itj_commons/src/main/java/top/genitalbean/itj/commons/exception/ServiceException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="45" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_commons/src/main/java/top/genitalbean/itj/commons/exception/NoDataMatchException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/user_img/1544441146013_19910.jpeg" />
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/test/java/top/genitalbean/itj/test/ObjectTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/icons.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/user_img/lanko/1544439236379_19910.jpeg" />
     <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/user_img/lanko/1544416530219_19910.jpeg" />
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="22" selection-end-line="55" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_entity/src/main/java/top/genitalbean/itj/pojo/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="233" column="15" lean-forward="true" selection-start-line="233" selection-start-column="15" selection-end-line="233" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="66" column="45" lean-forward="true" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -798,7 +755,6 @@
         <state relative-caret-position="-360" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_entity/src/main/java/top/genitalbean/itj/pojo/vo/UserArticleVO.java" />
     <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/BaseMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -806,33 +762,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/mapper/UserArticleMapper.java">
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/showdown.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/DeveloperSoftware/apache-maven-3.6.0/Repository/javax/servlet/jstl/1.2/jstl-1.2.jar!/org/apache/taglibs/standard/lang/jstl/test/PageContextImpl.class" />
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="44" />
+        <state relative-caret-position="270">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/65f778a2-cec5-400b-8ed4-4a7bce535384/console.sql">
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/mapper/UserArticleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/UserArticleMapper.xml">
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/zero.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state relative-caret-position="528">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_entity/src/main/java/top/genitalbean/itj/pojo/vo/UserArticleVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/mapper/ArticleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_entity/src/main/java/top/genitalbean/itj/pojo/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/user_img/lanko/1544439236379_19910.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/test/java/top/genitalbean/itj/test/ObjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1495">
+          <caret line="126" column="36" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/assets/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/user_img/readme">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/edit.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/showdown.min.js">
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/skin/default/loading-2.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/skin/default/loading-1.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/skin/default/loading-0.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/layer/skin/default/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/UserArticleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/ArticleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/ArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="36" column="8" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="264">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
           <folding>
             <element signature="n#filter#0;n#web-app#0;n#!!top" />
             <element signature="n#filter-mapping#0;n#web-app#0;n#!!top" />
@@ -843,47 +953,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../DeveloperSoftware/apache-maven-3.6.0/Repository/javax/servlet/jstl/1.2/jstl-1.2.jar!/org/apache/taglibs/standard/lang/jstl/test/PageContextImpl.class">
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="253">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/test.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="144">
+          <caret line="6" column="74" lean-forward="true" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/zero.jsp">
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+        <state relative-caret-position="334">
+          <caret line="62" column="36" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="66">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_entity/src/main/java/top/genitalbean/itj/pojo/ArticleEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
-            <element signature="e#723#729#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/extensions/com.intellij.database/data/extractors/SQL-Insert-Statements.sql.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186" />
+      </provider>
+    </entry>
+    <entry file="das://65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_article.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_article_tag">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_tag.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_tag">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/65f778a2-cec5-400b-8ed4-4a7bce535384/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_article_tag.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
         </state>
       </provider>
     </entry>

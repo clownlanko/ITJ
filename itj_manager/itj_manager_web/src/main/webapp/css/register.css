@@ -61,12 +61,13 @@ a:hover {
 
 .links a.blog {
 	background: url(../img/blog.png) center center no-repeat;
-	margin-right: 60px;
+	margin-right: 50px;
 	background-size: 30px 30px;
 }
 .links a.login{
 	background: url(../img/login.png) center center no-repeat;
 	background-size: 30px 30px;
+	margin-right: 25px;
 }
 .autograph{
 	font-size: 18px;
@@ -238,6 +239,14 @@ a:hover {
 }
 
 /* ----- Media queries ----- */
+
+@media (max-width: 1200px) {
+
+	.register form h2 {
+		background: url(../img/pencil.png) 20px 6px no-repeat;
+	}
+
+}
 
 @media (min-width: 768px) and (max-width: 979px) {
 

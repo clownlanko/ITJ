@@ -29,6 +29,8 @@ CREATE TABLE `itj_article`  (
   `content` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `like_quantity` int(11) NULL DEFAULT 0,
   `look_quantity` int(11) NULL DEFAULT 0,
+  `create_time`   datetime        null,
+  `modify_time`   datetime        null,
   PRIMARY KEY (`article_id`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 

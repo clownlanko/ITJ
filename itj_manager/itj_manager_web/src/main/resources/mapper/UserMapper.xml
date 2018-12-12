@@ -9,13 +9,13 @@
     </insert>
     <!--根据用户名查找-->
     <select id="queryByAccount" parameterType="java.lang.String" resultType="top.genitalbean.itj.pojo.UserEntity">
-        SELECT account, password, nickname, head_photo AS headPhoto, autograph,
+        SELECT user_id AS userId,account, password, nickname, head_photo AS headPhoto, autograph,
         join_time AS joinTime,modify_time AS modifyTime FROM itj_user
         WHERE account=#{account};
     </select>
     <!--根据用户名和密码查找-->
     <select id="queryByUser" resultType="top.genitalbean.itj.pojo.UserEntity">
-        SELECT account, password, nickname, head_photo AS headPhoto, autograph,
+        SELECT user_id AS userId,account, password, nickname, head_photo AS headPhoto, autograph,
                join_time AS joinTime,modify_time AS modifyTime FROM itj_user
         WHERE account=#{account} AND password=#{password};
     </select>

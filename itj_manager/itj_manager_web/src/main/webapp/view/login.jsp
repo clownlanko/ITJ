@@ -29,8 +29,8 @@
 <div class="copy-right">
     <p>Copyright &copy; 2018.<a href="http://www.genitalbean.top/TinyLove/" target="_blank" title="微爱">TinyLvoe</a> All rights reserved.</p>
 </div>
-<script src="../assets/js/jquery-1.8.2.min.js"></script>
-<script src="../assets/layer/layer.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/jquery-1.8.2.min.js"></script>
+<script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
 <!--//end-copyright-->
 </body>
 <script>

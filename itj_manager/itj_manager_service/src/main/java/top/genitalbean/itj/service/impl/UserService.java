@@ -15,9 +15,6 @@ import java.util.List;
 @Service
 public class UserService implements BaseService {
     @Autowired UserMapper userMapper;
-    @Transactional(propagation = Propagation.SUPPORTS,rollbackFor = {
-            RuntimeException.class, FileNotFoundException.class
-    })
     @Override
     public <E> boolean insert(E e) {
         return userMapper.insert(e)==1;
@@ -44,7 +41,6 @@ public class UserService implements BaseService {
      * @return 返回一个用户
      * @throws NoDataMatchException 没有找到数据引发的异常
      */
-    @Transactional(readOnly = true,rollbackFor = NoDataMatchException.class)
     public UserEntity queryByAccount(String account) throws NoDataMatchException{
         UserEntity user = userMapper.queryByAccount(account);
         if(user==null){
@@ -52,7 +48,6 @@ public class UserService implements BaseService {
         }
         return user;
     }
-    @Transactional(readOnly = true,rollbackFor = NoDataMatchException.class)
     public UserEntity queryByUser(String account,String password) throws NoDataMatchException{
         UserEntity user = userMapper.queryByUser(account,password);
         if(user==null){

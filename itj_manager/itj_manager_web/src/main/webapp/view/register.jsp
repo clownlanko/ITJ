@@ -56,7 +56,7 @@
 <script src="${pageContext.request.contextPath}/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/js/jquery.backstretch.min.js"></script>
 <script src="${pageContext.request.contextPath}/assets/js/scripts.js"></script>
-<script src="assets/layer/layer.js"></script>
+<script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
 </body>
 <script>
     function selectFile() {
@@ -90,7 +90,7 @@
                     icon: 0
                 });
                 if(json.state==4){
-                    location.href="zero.jsp";
+                    location.href="${pageContext.request.contextPath}/view/zero.jsp";
                 }
             }
         });

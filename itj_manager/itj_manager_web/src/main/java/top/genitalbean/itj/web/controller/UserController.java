@@ -24,7 +24,7 @@ public class UserController extends BaseController{
     @Autowired UserService userService;
     @PostMapping(value = "/register.itj")
     @ResponseBody
-    public ResponseResult<Void> register(HttpServletRequest request, HttpServletResponse response,
+    public ResponseResult<Void> register(HttpServletRequest request,
                                  @RequestParam("account") String account,
                                  @RequestParam("password") String password,
                                  @RequestParam("headPhoto") CommonsMultipartFile headPhoto) throws IOException {
