@@ -5,12 +5,10 @@
     <meta charset="utf-8">
     <title>ITJ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/register.css">
 </head>
-
 <body>
-
 <div class="header">
     <div class="container">
         <div class="row">
@@ -52,11 +50,11 @@
         rights reserved.</p>
 </div>
 <!-- Javascript -->
-<script src="${pageContext.request.contextPath}/assets/js/jquery-1.8.2.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/js/jquery.backstretch.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/js/scripts.js"></script>
-<script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery-2.1.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery.backstretch.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/register.js"></script>
+<script src="${pageContext.request.contextPath}/layer/layer.js"></script>
 </body>
 <script>
     function selectFile() {

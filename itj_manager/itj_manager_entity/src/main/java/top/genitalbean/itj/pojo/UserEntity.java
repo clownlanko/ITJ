@@ -17,7 +17,7 @@ public class UserEntity {
     @NonNull
     private String password;
     private String nickname;
-    private String headPhoto;
+    private String headPhoto="img/account.png";
     private String autograph;
     private Date joinTime;
     private Date modifyTime;

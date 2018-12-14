@@ -119,13 +119,13 @@ a:hover {
 	display: none;
 }
 .register form input[type="text"] {
-	background: url(../../img/account.png) left center no-repeat;
+	background: url(../img/account.png) left center no-repeat;
 	background-size: 30px 30px;
 	background-position-x: 5px;
 	padding: 1px 2px 3px 40px;
 }
 .register form input[type="password"] {
-	background: url(../../img/password.png) left center no-repeat;
+	background: url(../img/password.png) left center no-repeat;
 	background-size: 30px 30px;
 	background-position-x: 5px;
 	padding: 1px 2px 3px 40px;
@@ -239,22 +239,6 @@ a:hover {
 }
 
 /* ----- Media queries ----- */
-
-@media (max-width: 1200px) {
-
-	.register form h2 {
-		background: url(../img/pencil.png) 20px 6px no-repeat;
-	}
-
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-
-	.register form h2 {
-		background: none;
-	}
-
-}
 
 @media (max-width: 767px) {
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org/DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="top.genitalbean.itj.dao.mapper.ArticleTagMapper">
+    <insert id="insertMultipartTag" parameterType="top.genitalbean.itj.pojo.ArticleTagEntity">
+      INSERT INTO itj_article_tag(article_id, tag_id) VALUES
+      <foreach collection="array" item="articleTags" open="(" close=");" separator="),(">
+          #{articleTags.articleId},#{articleTags.tagId}
+      </foreach>
+    </insert>
+</mapper>

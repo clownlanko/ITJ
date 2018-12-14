@@ -15,7 +15,7 @@
     <h2>Welcome to ITJ</h2>
     <div class="line"><span></span></div>
     <div class="location"><img src="${pageContext.request.contextPath}/img/location.png" class="img-responsive" alt="" /></div>
-    <form action="user.itj/login.itj" method="post" onsubmit="return apply();">
+    <form action="${pageContext.request.contextPath}/user.itj/login.itj" method="post" onsubmit="return apply();">
         <input name="account" placeholder="enter a account" type="text" class="text">
         <input name="password" placeholder="enter a password" type="password">
         <div class="submit"><input type="submit" value="Sign in"></div>
@@ -29,13 +29,12 @@
 <div class="copy-right">
     <p>Copyright &copy; 2018.<a href="http://www.genitalbean.top/TinyLove/" target="_blank" title="微爱">TinyLvoe</a> All rights reserved.</p>
 </div>
-<script src="${pageContext.request.contextPath}/assets/js/jquery-1.8.2.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery-2.1.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/layer/layer.js"></script>
 <!--//end-copyright-->
 </body>
 <script>
     function apply() {
-        console.info(123);
         let error = 0;
         $("input[type!=button]").each(function() {
             if ($(this).val() == "") {

@@ -3,7 +3,7 @@
         "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
 <mapper namespace="top.genitalbean.itj.dao.mapper.UserMapper">
     <!--添加用户-->
-    <insert id="insert" parameterType="top.genitalbean.itj.pojo.UserEntity" useGeneratedKeys="true">
+    <insert id="insert" parameterType="top.genitalbean.itj.pojo.UserEntity" keyProperty="userId" useGeneratedKeys="true">
       INSERT INTO itj_user(account, password, nickname, head_photo, autograph,join_time,modify_time)
       VALUES(#{account},#{password},#{nickname},#{headPhoto},#{autograph},#{joinTime},#{modifyTime});
     </insert>

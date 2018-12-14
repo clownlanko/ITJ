@@ -88,6 +88,11 @@ header{
 #result{
 	width:50.5%;
 	height: 95%;
+	overflow-y: scroll;
+	word-break: break-all;
+}
+#result *{
+	clear: both;
 }
 a{
 	text-decoration: none;

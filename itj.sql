@@ -13,6 +13,8 @@
 
  Date: 10/12/2018 01:38:35
 */
+use mysql ;
+drop database if exists itj;
 create database itj default charset=utf8;
 use itj;
 SET NAMES utf8mb4;

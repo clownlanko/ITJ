@@ -13,15 +13,16 @@ import java.io.FileNotFoundException;
 import java.util.List;
 
 @Service
-public class UserService implements BaseService {
+public class UserService implements BaseService<UserEntity> {
     @Autowired UserMapper userMapper;
     @Override
-    public <E> boolean insert(E e) {
-        return userMapper.insert(e)==1;
+    public boolean insert(UserEntity e) {
+        userMapper.insert(e);
+        return e.getUserId()>0;
     }
 
     @Override
-    public <E> boolean update(E e) {
+    public boolean update(UserEntity e) {
         return false;
     }
 
@@ -31,7 +32,7 @@ public class UserService implements BaseService {
     }
 
     @Override
-    public <E> List<E> query() {
+    public  List<UserEntity> query() {
         return null;
     }
 

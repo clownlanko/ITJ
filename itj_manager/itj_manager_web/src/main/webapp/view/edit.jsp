@@ -9,16 +9,15 @@
 <body>
 <header>
     <div>
-        <form id="article-form" action="${pageContext.request.contextPath}/ac.itj/add.itj" method="post">
+        <form id="article-form">
             <input type="hidden" name="userId" value="${sessionScope.user.userId}"/>
             <input title="标题" id="title" placeholder="Title" name="title"/>
             <ul>
-                <li><input type="submit" id="save"/></li>
+                <li><input type="button" id="save" onclick="saveArticle()"/></li>
                 <li><input type="button" id="imgBtn" onclick="addImage()"/></li>
                 <li><input type="button" id="tagBtn" onclick="addTag()"/></li>
                 <li><a id="back" href=""></a></li>
             </ul>
-            <div class="article-tag"><input type="checkbox" checked name="tags" value="无"/><label></label></div>
             <textarea style="display: none;" id="article" name="content" placeholder="article"></textarea>
         </form>
     </div>
@@ -26,17 +25,20 @@
         <textarea spellcheck="true" wrap="soft" translate id="content" onkeyup="compile()"></textarea>
         <div id="result"></div>
     </div>
+    <!--添加标签-->
     <div id="tag" style="display: none;"><input placeholder="enter a tag"></div>
+    <!--上传图片-->
     <div id="image" style="display: none;">
         <form id="image-form" enctype="multipart/form-data">
             <input type="hidden" name="account" value="${user.account}">
             <input name="image" type="file"/>
-        </form></div>
+        </form>
+    </div>
 </header>
 </body>
 <script src="${pageContext.request.contextPath}/js/showdown.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/js/jquery-1.8.2.min.js"></script>
-<script src="${pageContext.request.contextPath}/assets/layer/layer.js"></script>
+<script src="${pageContext.request.contextPath}/js/jquery-2.1.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/layer/layer.js"></script>
 <script>
     function compile(){
         let converter = new showdown.Converter();
@@ -60,7 +62,7 @@
         });
     }
     function addImage(){
-        $("#image>input").val("");
+        $("#image-form>input[type=file]").val("");
         layer.open({
             type:1,
             title:"添加图片",
@@ -83,7 +85,7 @@
                             })
                         }
                         if(json.state==4){
-                            document.getElementById("content").value+="![图片描述]("+json.data+")";
+                            document.getElementById("content").value+="![图片描述](${pageContext.request.contextPath}/"+json.data+")";
                         }
                     }
                 });
@@ -96,10 +98,10 @@
             url:"${pageContext.request.contextPath}/ac.itj/add.itj",
             data:$("#article-form").serialize(),
             dataType:"json",
-            type:"post",
+            type:"POST",
             success:function (json) {
                 if(json.state==4){
-                    layer.config(json.message,{
+                    var index=layer.confirm(json.message,{
                         title:"ITJ提示",
                         icon:1,
                         btn:["查看","管理博客","返回主页"]
@@ -109,7 +111,8 @@
                         alert("管理博客");
                     },function () {
                         alert("返回主页");
-                    })
+                    });
+                    layer.close(index);
                 }
             }
         });

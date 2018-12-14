@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org/DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="top.genitalbean.itj.dao.mapper.TagMapper">
+    <insert id="insert" parameterType="top.genitalbean.itj.pojo.TagEntity" useGeneratedKeys="true" keyProperty="tagId">
+      INSERT INTO itj_tag(tag_name) VALUES (#{tagName});
+    </insert>
+    <insert id="insertMultipartTag" useGeneratedKeys="true" parameterType="top.genitalbean.itj.pojo.TagEntity">
+        INSERT INTO itj_tag(tag_name) VALUES
+        <foreach collection="list" item="articleTags" open="(" close=");" separator="),(">
+            #{articleTags.tagName}
+        </foreach>
+        <selectKey resultType="java.lang.Integer" keyColumn="tag_id" order="BEFORE" keyProperty="tagId">
+            SELECT LAST_INSERT_ID() AS tagId;
+        </selectKey>
+    </insert>
+    <select id="findByTagId" parameterType="java.lang.Integer" resultType="top.genitalbean.itj.pojo.TagEntity">
+      SELECT tag_id AS tagId,tag_name AS tagName FROM itj_tag WHERE tag_id=#{tagId};
+    </select>
+    <select id="query" resultType="top.genitalbean.itj.pojo.TagEntity">
+        SELECT tag_id AS tagId,tag_name AS tagName FROM itj_tag;
+    </select>
+</mapper>
