@@ -23,7 +23,7 @@ public class UserService implements BaseService<UserEntity> {
 
     @Override
     public boolean update(UserEntity e) {
-        return false;
+        return userMapper.update(e)>0;
     }
 
     @Override
@@ -49,11 +49,30 @@ public class UserService implements BaseService<UserEntity> {
         }
         return user;
     }
+
+    /**
+     * 根据账户和密码查询
+     * @param account
+     * @param password
+     * @return 一个用户
+     * @throws NoDataMatchException 没有找到用户引发的异常
+     */
     public UserEntity queryByUser(String account,String password) throws NoDataMatchException{
         UserEntity user = userMapper.queryByUser(account,password);
         if(user==null){
             throw new NoDataMatchException("No user of named "+account);
         }
         return user;
+    }
+
+    /**
+     * 修改密码
+     * @param account 账号
+     * @param oldPwd 原密码
+     * @param newPwd 新密码
+     * @return
+     */
+    public boolean changePassword(String account,String oldPwd,String newPwd){
+        return userMapper.changePassword(account, oldPwd, newPwd) >0;
     }
 }

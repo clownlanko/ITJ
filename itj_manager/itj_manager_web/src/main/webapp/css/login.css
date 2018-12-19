@@ -232,7 +232,7 @@ body h1 {
 
 .app-location {
 	width: 28%;
-	margin: 0 auto;
+	margin: 5% auto;
 	text-align: center;
 	background: #323542;
 	padding: 4em;
@@ -293,7 +293,7 @@ form {
 	margin: 1em 0;
 }
 
-.app-location input[type="submit"] {
+.app-location input[type="button"] {
 	font-size: 20px;
 	font-weight: 300;
 	color: #fff;
@@ -309,7 +309,7 @@ form {
 	-moz-border-radius: 0.3em;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
 	background: none;
 	border: 3px solid #0bd38a;
 	color: #0bd38a;
@@ -341,24 +341,10 @@ input[type="submit"]:hover {
 }
 
 /*---------------*/
-.copy-right {
-	padding: 3em 1em;
-}
-
-.copy-right p {
-	color: #fff;
-	font-size: 1em;
-	font-weight: 400;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.copy-right p a {
-	color: #323542;
-}
-
-.copy-right p a:hover {
-	text-decoration: underline;
+.copy-right{
+	position: fixed;
+	margin-top: -10px;
+	margin-left: 40%;
 }
 
 /*-----start-responsive-design------*/

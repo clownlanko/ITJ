@@ -6,4 +6,64 @@
         INSERT INTO itj_article(user_id, title, content, like_quantity, look_quantity,create_time,modify_time)
         VALUES (#{userId},#{title},#{content},0,0,#{createTime},#{modifyTime});
     </insert>
+    <resultMap id="article" type="top.genitalbean.itj.pojo.vo.UserArticleVO">
+        <id property="articleId" column="articleId"/>
+        <result column="userId" property="userId"/>
+        <result column="nickname" property="nickname"/>
+        <result column="title" property="title"/>
+        <result column="content" property="content"/>
+        <result column="likeQuantity" property="likeQuantity"/>
+        <result column="lookQuantity" property="lookQuantity"/>
+        <result column="createTime" property="createTime"/>
+        <result column="modifyTime" property="modifyTime"/>
+        <collection property="tags" ofType="java.lang.String">
+            <result column="tagName"/>
+        </collection>
+        <collection property="commonts" ofType="java.lang.String">
+            <result column="commont"/>
+        </collection>
+    </resultMap>
+    <!--根据用户ID查询个人文章-->
+    <select id="queryByUserId" parameterType="java.lang.Integer" resultMap="article">
+        SELECT itja.article_id AS articleId,itju.nickname AS nickname,itja.user_id AS userId,
+        itja.title,itja.content,itja.like_quantity AS likeQuantity,
+        itja.look_quantity AS lookQuantity ,itja.create_time AS createTime,
+        itja.modify_time AS modifyTime,itjt.tag_name AS tagName,itjac.commont
+        FROM itj_article itja LEFT JOIN itj_article_tag itjat ON itja.article_id=itjat.article_id
+                              LEFT JOIN itj_tag itjt ON itjt.tag_id=itjat.tag_id
+                              JOIN itj_user itju ON itja.user_id=itju.user_id
+                              LEFT JOIN itj_article_commont itjac ON itja.article_id = itjac.article_id
+        WHERE itja.user_id=#{userId};
+    </select>
+    <!--根据文章id查询文章-->
+    <select id="queryByArticleId" parameterType="java.lang.Integer" resultMap="article">
+        SELECT itja.article_id AS articleId,itju.nickname AS nickname,itja.user_id AS userId,
+               itja.title,itja.content,itja.like_quantity AS likeQuantity,
+               itja.look_quantity AS lookQuantity ,itja.create_time AS createTime,
+               itja.modify_time AS modifyTime,itjt.tag_name AS tagName,itjac.commont
+        FROM itj_article itja LEFT JOIN itj_article_tag itjat ON itja.article_id=itjat.article_id
+                              LEFT JOIN itj_tag itjt ON itjt.tag_id=itjat.tag_id
+                              JOIN itj_user itju ON itja.user_id=itju.user_id
+                              LEFT JOIN itj_article_commont itjac ON itja.article_id = itjac.article_id
+        WHERE itja.article_id=#{articleId};
+    </select>
+    <!--修改文章的查阅数-->
+    <update id="updateLookQuantity" parameterType="java.lang.Integer">
+        UPDATE itj_article SET look_quantity+=1 WHERE article_id=#{articleId};
+    </update>
+    <!--文章点赞-->
+    <update id="updateLikeQuantity" parameterType="java.lang.Integer">
+        UPDATE itj_article SET like_quantity+=1 WHERE article_id=#{articleId};
+    </update>
+    <select id="queryArticles" resultMap="article">
+        SELECT itja.article_id AS articleId,itju.nickname AS nickname,itja.user_id AS userId,
+               itja.title,itja.content,itja.like_quantity AS likeQuantity,
+               itja.look_quantity AS lookQuantity ,itja.create_time AS createTime,
+               itja.modify_time AS modifyTime,itjt.tag_name AS tagName,itjac.commont
+        FROM itj_article itja LEFT JOIN itj_article_tag itjat ON itja.article_id=itjat.article_id
+                              LEFT JOIN itj_tag itjt ON itjt.tag_id=itjat.tag_id
+                              JOIN itj_user itju ON itja.user_id=itju.user_id
+                              LEFT JOIN itj_article_commont itjac ON itja.article_id = itjac.article_id
+        ORDER BY itja.like_quantity AND itja.look_quantity DESC;
+    </select>
 </mapper>

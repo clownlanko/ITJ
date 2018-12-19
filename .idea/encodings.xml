@@ -8,6 +8,8 @@
     <file url="file://$PROJECT_DIR$/itj_manager/itj_manager_entity" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/itj_manager/itj_manager_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/itj_manager/itj_manager_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/markdown.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/readme.txt" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

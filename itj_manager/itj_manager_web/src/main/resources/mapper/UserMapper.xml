@@ -19,4 +19,16 @@
                join_time AS joinTime,modify_time AS modifyTime FROM itj_user
         WHERE account=#{account} AND password=#{password};
     </select>
+    <!--修改密码-->
+    <update id="changePassword">
+        UPDATE itj_user SET password=#{newPwd} WHERE account=#{account} AND password=#{oldPwd};
+    </update>
+    <!--修改个人信息-->
+    <update id="update" parameterType="top.genitalbean.itj.pojo.UserEntity">
+        UPDATE itj_user SET
+        <if test="nickname!=null">nickname=#{nickname},</if>
+        <if test="autograph!=null">autograph=#{autograph},</if>
+        <if test="headPhoto!=null">head_photo=#{headPhoto},</if>
+        modify_time=#{modifyTime} WHERE user_id=#{userId};
+    </update>
 </mapper>
