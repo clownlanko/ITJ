@@ -24,10 +24,6 @@ import java.io.IOException;
 public class UserController extends BaseController{
     private final Logger log=Logger.getLogger(UserController.class);
     @Autowired UserService userService;
-    private UserEntity user;
-    private CommonsMultipartFile headPhoto;
-    private String nickname;
-    private String autograph;
 
     /**
      * 注册
@@ -177,6 +173,8 @@ public class UserController extends BaseController{
         if(!headPhoto.isEmpty()){
             File dir = new File(request.getServletContext().getRealPath("/user_img"),
                     user.getAccount());
+            if(!dir.exists())
+                dir.mkdir();
             userEntity.setHeadPhoto("user_img/"+user.getAccount()+"/"+File4ITJ.saveImageToFile(headPhoto, dir).getName());
         }
         userEntity.setModifyTime(DateFormat.now());

@@ -27,13 +27,12 @@
 							<li><a href="/ITJ/user.itj/logout.itj">退出</a></li>
 						</ul>
 					</li>
-					<li><a href="javascript:openAboutUsPanel();">关于我们</a></li>
 				</ol>
 			</div>
 			<div id="headPhoto">
 				<p>${user.account}</p>
 				<img src="/ITJ/${user.headPhoto==null?'user_img/account.jpg':user.headPhoto}"/>
-				<p>${user.autograph}</p>
+				<p>${user.autograph==null?"":user.autograph}</p>
 			</div>
 		</header>
 		<article id="articles"  style="width: 90%;">
@@ -50,8 +49,8 @@
 					<input type="file" onchange="" name="headPhoto" style="display: none;"/>
 				</div>
 				<div>${user.account}<button type="button" onclick="changeState()">修改</button></div>
-				<div><input name="nickname" placeholder="${user.nickname}" disabled="disabled"/></div>
-				<div><input name="autograph" placeholder="${user.autograph}" disabled="disabled"/></div>
+				<div><input name="nickname" placeholder="${user.nickname==null?"昵称":user.nickname}" disabled="disabled"/></div>
+				<div><input name="autograph" placeholder="${user.autograph==null?"个性签名":user.autograph}" disabled="disabled"/></div>
 			</form>
 		</div>
 		<!--修改密码-->
@@ -61,16 +60,6 @@
 				新&nbsp;&nbsp;密&nbsp;&nbsp;码:&nbsp;<input name="newPwd" type="password"/><br>
 				确认密码:&nbsp;&nbsp;<input type="password" placeholder="reNewPwd"/>
 			</form>
-		</div>
-		<div id="aboutUs" style="display: none;margin-left: 30px;">
-			<h2>ITJ博客</h2>
-			<p>个人所创<a href="http://www.genitalbean.top/TinyLove/" title="微爱">TinyLvoe</a> All rights reserved.</p>
-			<p>汝若欢喜，所有功能免费使用.
-			汝若不<br>欢喜或觉得功能不够强大,可以前往
-			GitHub:<br>http://www.github.com/kittycoco/ITJ.git
-			<br>赋予更强大的功能。
-			也可以反馈邮箱:clownlanko@126.com</p>
-			<textarea></textarea><br>
 		</div>
 	</body>
 	<script src="/ITJ/js/jquery-2.1.4.min.js"></script>

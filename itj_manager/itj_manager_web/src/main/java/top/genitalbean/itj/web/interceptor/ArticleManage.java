@@ -11,8 +11,7 @@ public class ArticleManage implements HandlerInterceptor {
         System.err.println("ArticleManager.preHandle(...):"+request.getServletPath());
         if(request.getSession().getAttribute("user")!=null){
             return true;
-        }else {
-            return false;
         }
+        return false;
     }
 }

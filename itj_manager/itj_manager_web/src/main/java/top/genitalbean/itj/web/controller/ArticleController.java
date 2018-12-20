@@ -2,18 +2,19 @@ package top.genitalbean.itj.web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.IdGenerator;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
+import sun.rmi.rmic.iiop.IDLGenerator;
 import top.genitalbean.itj.commons.exception.NoDataMatchException;
 import top.genitalbean.itj.commons.util.DateFormat;
 import top.genitalbean.itj.commons.util.File4ITJ;
+import top.genitalbean.itj.commons.util.IDFactory;
 import top.genitalbean.itj.commons.web.ImageResult;
 import top.genitalbean.itj.commons.web.ResponseResult;
-import top.genitalbean.itj.pojo.ArticleEntity;
-import top.genitalbean.itj.pojo.ArticleTagEntity;
-import top.genitalbean.itj.pojo.TagEntity;
-import top.genitalbean.itj.pojo.UserEntity;
+import top.genitalbean.itj.pojo.*;
 import top.genitalbean.itj.pojo.vo.UserArticleVO;
+import top.genitalbean.itj.service.impl.ArticleCommontService;
 import top.genitalbean.itj.service.impl.ArticleService;
 import top.genitalbean.itj.service.impl.ArticleTagService;
 import top.genitalbean.itj.service.impl.TagService;
@@ -22,20 +23,15 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 @Controller
 @RequestMapping("/ac.itj")
 public class ArticleController extends BaseController {
-    @Autowired
-    ArticleService articleService;
-    @Autowired
-    TagService tagService;
-    @Autowired
-    ArticleTagService articleTagService;
-
+    @Autowired private ArticleService articleService;
+    @Autowired private TagService tagService;
+    @Autowired private ArticleTagService articleTagService;
+    @Autowired private ArticleCommontService articleCommontService;
     /**
      * 添加博客
      *
@@ -99,13 +95,15 @@ public class ArticleController extends BaseController {
         if (!image.isEmpty()) {
             File dir = new File(request.getServletContext().getRealPath("/user_img"),
                     account);
+            if(!dir.exists())
+                dir.mkdir();
             File file = File4ITJ.saveImageToFile(image, dir);
             if (file.exists()) {
                 result.setSuccess(1);
                 System.err.println("radd:" + request.getLocalAddr());
                 System.err.println("ru:" + request.getLocalName());
                 System.out.println("rust:" + request.getLocalPort());
-                result.setUrl("user_img/" + account + "/" + file.getName());
+                result.setUrl("/ITJ/user_img/" + account + "/" + file.getName());
             } else {
                 result.setSuccess(0);
                 result.setMessage("上传失败");
@@ -157,6 +155,12 @@ public class ArticleController extends BaseController {
         return new ResponseResult<>(4, article);
     }
 
+    /**
+     * 点赞
+     * @param user
+     * @param articleId
+     * @return
+     */
     @GetMapping("/tu.itj")
     @ResponseBody
     public ResponseResult<Void> thumbsUp(@SessionAttribute("user") UserEntity user,
@@ -167,18 +171,73 @@ public class ArticleController extends BaseController {
                 result.setState(4);
                 result.setMessage("点赞成功");
                 return result;
+            }else{
+                result.setState(-1);
+                result.setMessage("请稍后再试！");
             }
+        }else{
+            result.setState(-1);
+            result.setMessage("自己不可以自己点赞哦！");
         }
-        result.setState(-1);
-        result.setMessage("请稍后再试！");
         return result;
     }
+
+    /**
+     * 查询所有文章
+     * @return
+     */
     @GetMapping("/ga.itj")
     @ResponseBody
     public ResponseResult<List<UserArticleVO>> getArticles(){
-        ResponseResult<List<UserArticleVO>> result = new ResponseResult<>();
-        result.setData(articleService.queryArticles());
-        result.setState(4);
+        return new ResponseResult<>(4,articleService.queryArticles());
+    }
+    /**
+     * 文章排行榜
+     */
+    @GetMapping("/qr.itj")
+    @ResponseBody
+    public ResponseResult<List<ArticleEntity>> queryRankingList(){
+        return new ResponseResult<>(4,articleService.query());
+    }
+
+    /**
+     * 评论文章
+     * @param articleCommont
+     * @return
+     */
+    @GetMapping("/acc.itj")
+    @ResponseBody
+    public ResponseResult<Void> addCommont(ArticleCommontEntity articleCommont){
+        ResponseResult<Void> result = new ResponseResult<>();
+        articleCommont.setCommontId(IDFactory.generateCommontId(articleCommont.getArticleId()));
+        if(articleCommontService.insert(articleCommont)){
+            result.setState(4);
+            result.setMessage("评论成功");
+        }else {
+            result.setState(-1);
+            result.setMessage("请稍后再试!");
+        }
         return result;
+    }
+    @ResponseBody
+    @RequestMapping("/da.itj")
+    public ResponseResult<Void> deleteArticle(@RequestParam("articleId") Integer articleId){
+        ResponseResult<Void> result = new ResponseResult<>();
+        Map<String,Integer> map=new HashMap<>(2);
+        map.put("articleId",articleId);
+        map.put("success",-1);
+        if(articleService.deleteArticle(map)){
+            result.setState(4);
+            result.setMessage("删除成功");
+        }else {
+            result.setState(-1);
+            result.setMessage("请稍后再试!");
+        }
+        return result;
+    }
+    @ResponseBody
+    @GetMapping("/acs.itj")
+    public ResponseResult<List<UserArticleVO>> queryArticleByKeyword(@RequestParam("keyword")String keyword){
+        return new ResponseResult<>(4,articleService.queryArticleByKeyword(keyword));
     }
 }

@@ -49,12 +49,13 @@
     </select>
     <!--修改文章的查阅数-->
     <update id="updateLookQuantity" parameterType="java.lang.Integer">
-        UPDATE itj_article SET look_quantity+=1 WHERE article_id=#{articleId};
+        UPDATE itj_article SET look_quantity=look_quantity+1 WHERE article_id=#{articleId};
     </update>
     <!--文章点赞-->
     <update id="updateLikeQuantity" parameterType="java.lang.Integer">
-        UPDATE itj_article SET like_quantity+=1 WHERE article_id=#{articleId};
+        UPDATE itj_article SET like_quantity=like_quantity+1 WHERE article_id=#{articleId};
     </update>
+    <!--查询所有文章-->
     <select id="queryArticles" resultMap="article">
         SELECT itja.article_id AS articleId,itju.nickname AS nickname,itja.user_id AS userId,
                itja.title,itja.content,itja.like_quantity AS likeQuantity,
@@ -65,5 +66,24 @@
                               JOIN itj_user itju ON itja.user_id=itju.user_id
                               LEFT JOIN itj_article_commont itjac ON itja.article_id = itjac.article_id
         ORDER BY itja.like_quantity AND itja.look_quantity DESC;
+    </select>
+    <!--文章排行榜-->
+    <select id="query" resultType="top.genitalbean.itj.pojo.ArticleEntity">
+        SELECT article_id AS articleId,title FROM itj_article ORDER BY like_quantity AND look_quantity DESC LIMIT 10;
+    </select>
+    <!--删除文章-->
+    <select id="deleteArticle" parameterMap="delete_article" statementType="CALLABLE">
+        CALL proc_delete_article(?,?);
+    </select>
+    <!--删除文章存储过程的参数-->
+    <parameterMap id="delete_article" type="java.util.Map">
+        <parameter property="articleId" mode="IN" jdbcType="INTEGER"/>
+        <parameter property="success" mode="OUT" jdbcType="INTEGER"/>
+    </parameterMap>
+    <!--根据关键字查询文章-->
+    <select id="queryArticleByKeyword" resultType="top.genitalbean.itj.pojo.vo.KeywordArticleVO" parameterType="java.lang.String">
+        SELECT article_id AS articleId,title,nickname
+        FROM itj_article itja JOIN itj_user itju ON itja.user_id=itju.user_id
+        WHERE nickname LIKE #{keyword} OR title LIKE #{keyword} OR content LIKE #{keyword};
     </select>
 </mapper>

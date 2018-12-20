@@ -8,6 +8,7 @@ import top.genitalbean.itj.pojo.vo.UserArticleVO;
 import top.genitalbean.itj.service.BaseService;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class ArticleService implements BaseService<ArticleEntity> {
@@ -36,10 +37,16 @@ public class ArticleService implements BaseService<ArticleEntity> {
     public <E> boolean delete(E e) {
         return false;
     }
-
+    public boolean deleteArticle(Map<String,Integer> map){
+        articleMapper.deleteArticle(map);
+        return map.get("success")==1;
+    }
+    public List<UserArticleVO> queryArticleByKeyword(String keyword){
+        return articleMapper.queryArticleByKeyword("%"+keyword+"%");
+    }
     @Override
     public List<ArticleEntity> query() {
-        return null;
+        return articleMapper.query();
     }
     public List<UserArticleVO> queryArticles(){
         return articleMapper.queryArticles();

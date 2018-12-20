@@ -16,10 +16,10 @@
 		<header>
 			<div class="menu">
 				<ol>
-					<li><a href="home.jsp">主页</a></li>
-					<li><a href="zero.jsp">博客管理</a></li>
-					<li><a href="editor.jsp">写博客</a></li>
-					<li><a href="">关于我们</a></li>
+					<li><a href="/ITJ/view/home.jsp">主页</a></li>
+					<li><a href="/ITJ/view/zero.jsp">博客管理</a></li>
+					<li><a href="/ITJ/view/editor.jsp">写博客</a></li>
+					<li><a href="javascript:openAboutUsPanel();">关于我们</a></li>
 				</ol>
 			</div>
 			<div id="large-header" class="large-header">
@@ -28,38 +28,32 @@
 	</header>
 	<article id="articles">
 		<!--single article-->
-		<div class="article">
-			<div class="title"><h3><a>文章标题</a></h3></div>
-			<div class="content">文章内容</div>
-			<div class="article-tags">
-				<ul>
-					<li>java</li>
-					<li>java</li>
-				</ul>
-			</div>
-			<div class="article-menu">
-				<ul>
-					<li><img src="/ITJ/img/like.png"><span>12312</span></li>
-					<li><img src="/ITJ/img/look.png" style="width: 22px; height: 25px;"><span>241</span></li>
-				</ul>
-			</div>
-		</div>
-
 	</article>
 	 <div class="leftPannel">
+		 <div class="seratch">
+			 <input onkeyup="seartch(this.value)" />
+			 <ul>
+				 <li><a style="margin-right: 50px;">博客测试</a>作责</li>
+				 <li><a>博客测试</a>作责</li>
+				 <li><a>博客测试</a>作责</li>
+				 <li><a>博客测试</a>作责</li>
+			 </ul>
+		 </div>
 	 	<div class="topPannel">
 	 		<h3>TOP</h3>
-	 			<ul>
-	 				<li><a>asdfaasdfaasdfaasdfa</a></li>
-	 				<li>asdfa</li>
-	 				<li>asdfa</li>
-	 				<li>asdfa</li>
-	 				<li>asdfa</li>
-	 				<li>asdfa</li>
-	 				<li>asdfa</li>
-	 			</ul>
+	 			<ul></ul>
 	 	</div>
 	 </div>
+		<div id="aboutUs" style="display: none;margin-left: 30px;">
+			<h2>ITJ博客</h2>
+			<p>个人所创<a href="http://www.genitalbean.top/TinyLove/" title="微爱">TinyLvoe</a> All rights reserved.</p>
+			<p>汝若欢喜，所有功能免费使用.
+				汝若不<br>欢喜或觉得功能不够强大,可以前往
+				GitHub:<br>http://www.github.com/kittycoco/ITJ.git
+				<br>赋予更强大的功能。
+				也可以反馈邮箱:clownlanko@126.com</p>
+			<textarea></textarea><br>
+		</div>
 	 <footer>
 	 	Copyright &copy; 2018.<a href="http://www.genitalbean.top/TinyLove/" title="微爱">TinyLvoe</a> All rights reserved.
 	 </footer>
@@ -67,7 +61,8 @@
 	<script src="/ITJ/js/jquery-2.1.4.min.js"></script>
 	<script src='/ITJ/js/TweenMax.js'></script>
 	<script src="/ITJ/js/home.js"></script>
+	<script src="/ITJ/layer/layer.js"></script>
 	<script>
-      $(queryArticles());
+      $(queryArticles(),queryRankingList());
 	</script>
 </html>

@@ -37,20 +37,14 @@ body {
 	margin-top: 5px;
 	background-color: rgba(255,255,255,0.5);
 }
-#aboutUs a{
-	color: black;
+.editor-menu{
+	display: none;
+	position: absolute;
+	margin-left: -30px;
 }
-#aboutUs>h2{
-	text-align: center;
+.editor-menu>li{
+	margin-bottom: 20px;
 }
-#aboutUs>textarea{
-	resize: none;
-	width: 300px;
-	height: 100px;
-}
-#aboutUs>button{
-	height: 30px;
-	padding: 5px 20px 5px 20px;
-	border: 1px solid gray;
-	margin-left: 120px;
+.article-menu>ul>li:hover .editor-menu{
+	display: block;
 }

@@ -15,21 +15,20 @@
 	<body>
 		<div><button id="back" onclick="history.back()"></button></div>
 		<div id="result" class="markdown-body editormd-html-preview"></div>
-		<div style="margin: 5px;">
+		<div id="result-footer">
 			<div class="article-tags"></div>
 			<div class="article-menu">
 				<ul>
-					<li><img src="/ITJ/img/like.png" onclick="thumbsUp(${param.ai})"><span>12312</span></li>
-					<li><img src="/ITJ/img/look.png" style="width: 22px; height: 25px;"><span>241</span></li>
-					<li><img src="/ITJ/img/comment.png" onclick="openCommontPanel()"></li>
+					<li><img src="/ITJ/img/like.png" onclick="thumbsUp(${param.ai})"><span>1212</span></li>
+					<li><img src="/ITJ/img/look.png" style="width: 22px; height: 25px;"><span>1234</span></li>
+					<li>
+						<img src="/ITJ/img/comment.png" onclick="openCommontPanel(${param.ai},${user.userId})">
+					</li>
 				</ul>
 			</div>
+			<div class="commont"></div>
 		</div>
-		<div class="commont">
-			<p>这篇文章写得好</p>
-			<p>这篇文章写得好</p>
-			<p>这篇文章写得好</p>
-		</div>
+
 		<input id="commont-panel" type="text" style="display: none;"/>
 		<script src="/ITJ/js/jquery-2.1.4.min.js"></script>
 		<script src="/ITJ/editor/lib/marked.min.js"></script>
