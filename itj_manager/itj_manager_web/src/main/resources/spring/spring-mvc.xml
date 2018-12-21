@@ -23,6 +23,9 @@
         <mvc:interceptor>
             <mvc:mapping path="/ac.itj/*.itj"/>
             <mvc:exclude-mapping path="/ac.itj/ga.itj"/>
+            <mvc:exclude-mapping path="/ac.itj/qr.itj"/>
+            <mvc:exclude-mapping path="/ac.itj/acs.itj"/>
+            <mvc:exclude-mapping path="/ac.itj/qa.itj"/>
             <bean class="top.genitalbean.itj.web.interceptor.ArticleManage"/>
         </mvc:interceptor>
     </mvc:interceptors>

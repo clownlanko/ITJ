@@ -27,7 +27,7 @@
 				<form id="regin-form" enctype="multipart/form-data">
 					<h2>REGISTER TO ITJ</h2>
 					<div>
-						<img src="/ITJ/img/avatar.jpg" onclick="selectFile()" />
+						<img id="show-icon" src="/ITJ/img/avatar.jpg" onclick="selectFile()" />
 						<input id="icon" name="headPhoto" type="file" />
 					</div>
 					<label for="account">Account</label><br>
@@ -48,4 +48,5 @@
 	<script src="/ITJ/js/jquery.backstretch.min.js"></script>
 	<script src="/ITJ/layer/layer.js"></script>
 	<script src="/ITJ/js/register.js"></script>
+    <script src="/ITJ/js/load-img.js"></script>
 </html>

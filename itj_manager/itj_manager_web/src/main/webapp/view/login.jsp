@@ -12,6 +12,7 @@
 		<title>ITJ博客</title>
 	</head>
 	<body>
+		<canvas class="p-canvas-webgl" id="canvas-webgl"></canvas>
 		<div class="app-location">
 			<h2>LOGIN TO ITJ</h2>
 			<div class="location"><img src="/ITJ/img/location.png" class="img-responsive" alt="" /></div>
@@ -31,5 +32,6 @@
 	</body>
 	<script src="/ITJ/js/jquery-2.1.4.min.js"></script>
 	<script src="/ITJ/layer/layer.js"></script>
+	<script src="/ITJ/js/tree.js"></script>
 	<script src="/ITJ/js/login.js"></script>
 </html>

@@ -99,7 +99,7 @@ public class UserController extends BaseController{
             log.info("remove user of session");
             session.removeAttribute("user");
         }
-        return "register";
+        return "login";
     }
     /**
      * 注册用户时判断用户名

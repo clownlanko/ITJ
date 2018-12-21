@@ -98,7 +98,7 @@
                                 icon: 1,
                                 btn: ["查看", "管理博客", "返回主页"]
                             }, function () {
-                                // location.href="/ITJ/view/article.jsp?ai="+JSON.stringify(json.data);
+                                location.href="/ITJ/view/article.jsp?ai="+JSON.stringify(json.data);
                             }, function () {
                                 location.href = "/ITJ/view/zero.jsp";
                             }, function () {

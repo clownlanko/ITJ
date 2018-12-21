@@ -1,5 +1,6 @@
 package top.genitalbean.itj.dao.mapper;
 
+import org.apache.ibatis.annotations.Param;
 import top.genitalbean.itj.dao.BaseMapper;
 import top.genitalbean.itj.pojo.vo.UserArticleVO;
 

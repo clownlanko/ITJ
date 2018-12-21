@@ -1,6 +1,8 @@
 jQuery(document).ready(function() {
     $.backstretch([
-        "/ITJ/img/backgrounds/1.jpg", "/ITJ/img/backgrounds/2.jpg", "/ITJ/img/backgrounds/3.jpg"
+        "/ITJ/img/backgrounds/1.jpg", "/ITJ/img/backgrounds/2.jpg", "/ITJ/img/backgrounds/3.jpg",
+        "/ITJ/img/backgrounds/4.jpg", "/ITJ/img/backgrounds/5.jpg", "/ITJ/img/backgrounds/6.jpg",
+        "/ITJ/img/backgrounds/7.jpg", "/ITJ/img/backgrounds/8.jpg"
     ], {
         duration: 3000,
         fade: 750

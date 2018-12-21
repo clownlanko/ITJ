@@ -45,8 +45,8 @@
 		<div id="userInfo" style="display: none;">
 			<form id="info-form" enctype="multipart/form-data" style="margin:10px 50px 10px 50px;">
 				<div>
-					<img src="/ITJ/${user.headPhoto==null?'user_img/account.jpg':user.headPhoto}" onclick="$('#info-form div input[type=file]').trigger('click')"/>
-					<input type="file" onchange="" name="headPhoto" style="display: none;"/>
+					<img id="show-icon" src="/ITJ/${user.headPhoto==null?'user_img/account.jpg':user.headPhoto}" onclick="$('#info-form div input[type=file]').trigger('click')"/>
+					<input type="file" id="icon" name="headPhoto" style="display: none;"/>
 				</div>
 				<div>${user.account}<button type="button" onclick="changeState()">修改</button></div>
 				<div><input name="nickname" placeholder="${user.nickname==null?"昵称":user.nickname}" disabled="disabled"/></div>
@@ -56,15 +56,16 @@
 		<!--修改密码-->
 		<div id="changePwd" style="display: none;">
 			<form id="password-form" style="margin: 10px;">
-				原&nbsp;&nbsp;密&nbsp;&nbsp;码:&nbsp;<input name="oldPwd" type="password"/><br>
-				新&nbsp;&nbsp;密&nbsp;&nbsp;码:&nbsp;<input name="newPwd" type="password"/><br>
-				确认密码:&nbsp;&nbsp;<input type="password" placeholder="reNewPwd"/>
+				原&nbsp;&nbsp;密&nbsp;&nbsp;码:&nbsp;<input name="oldPwd" type="password" placeholder="Original Password"/><br>
+				新&nbsp;&nbsp;密&nbsp;&nbsp;码:&nbsp;<input name="newPwd" type="password" placeholder="New Password"/><br>
+				确认密码:&nbsp;&nbsp;<input type="password" placeholder="Confirm password"/>
 			</form>
 		</div>
 	</body>
 	<script src="/ITJ/js/jquery-2.1.4.min.js"></script>
 	<script src="/ITJ/layer/layer.js"></script>
 	<script src="/ITJ/js/zero.js"></script>
+	<script src="/ITJ/js/load-img.js"></script>
 	<script>
 	    $(queryArticle(${user.userId}));
 	</script>

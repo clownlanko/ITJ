@@ -22,7 +22,7 @@
 					<li><img src="/ITJ/img/like.png" onclick="thumbsUp(${param.ai})"><span>1212</span></li>
 					<li><img src="/ITJ/img/look.png" style="width: 22px; height: 25px;"><span>1234</span></li>
 					<li>
-						<img src="/ITJ/img/comment.png" onclick="openCommontPanel(${param.ai},${user.userId})">
+						<img src="/ITJ/img/comment.png" onclick="openCommontPanel(${param.ai},${user.userId},'${user.nickname==null?user.account:user.nickname}')">
 					</li>
 				</ul>
 			</div>

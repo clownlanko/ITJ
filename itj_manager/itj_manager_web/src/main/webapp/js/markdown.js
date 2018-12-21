@@ -9,7 +9,8 @@ function createMarkdownEditor(editor,language,saveFunction,account) {
         editorTheme: "pastel-on-dark",
         codeFold: true,
         searchReplace: true,
-        htmlDecode: "style,script,iframe|on*",
+        // htmlDecode: true,
+        // htmlDecode: "style,script,iframe|on*",
         emoji: true,
         taskList: true,
         tocm: true,
@@ -41,7 +42,9 @@ function createMarkdownEditor(editor,language,saveFunction,account) {
 		},
         onload:function () {
             this.fullscreen();
-            this.setMarkdown("Hello Clown");
         }
     });
 }
+$(function() {
+    $("body").css("background-size", window.innerWidth + "px " + window.innerHeight + "px");
+});

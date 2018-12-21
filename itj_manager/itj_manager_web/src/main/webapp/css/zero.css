@@ -1,9 +1,9 @@
 body {
-	background-image: url(../img/background3.jpg);
-	/*background-repeat: no-repeat;*/
+	background-image: url(../img/backgrounds/background-zero.jpg);
 }
 #headPhoto{
 	clear: both;
+	margin-top: 20px;
 	margin-left: 30px;
 	text-align: center;
 }

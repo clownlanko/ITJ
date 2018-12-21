@@ -44,11 +44,15 @@ public class ArticleService implements BaseService<ArticleEntity> {
     public List<UserArticleVO> queryArticleByKeyword(String keyword){
         return articleMapper.queryArticleByKeyword("%"+keyword+"%");
     }
+    private List<UserArticleVO> list;
     @Override
     public List<ArticleEntity> query() {
         return articleMapper.query();
     }
-    public List<UserArticleVO> queryArticles(){
-        return articleMapper.queryArticles();
+    public List<UserArticleVO> queryArticles(Integer s,Integer e){
+        if((s==0 && e>s) || s>list.size()){
+            list=articleMapper.queryArticles();
+        }
+        return list.subList(s,e>list.size()?list.size():e);
     }
 }

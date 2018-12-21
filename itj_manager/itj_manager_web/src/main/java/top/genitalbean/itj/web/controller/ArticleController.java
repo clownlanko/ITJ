@@ -144,10 +144,10 @@ public class ArticleController extends BaseController {
      */
     @GetMapping("/qa.itj")
     @ResponseBody
-    public ResponseResult<UserArticleVO> getArticleBuArticleId(@SessionAttribute("user") UserEntity user,
+    public ResponseResult<UserArticleVO> getArticleBuArticleId(@SessionAttribute(value = "user",required = false) UserEntity user,
                                                     @RequestParam("articleId") Integer articleId) {
         UserArticleVO article = articleService.queryByArticleId(articleId);
-        if (user.getUserId() != article.getUserId()) {
+        if (user==null || user.getUserId() != article.getUserId()) {
             //如果不是本人，查阅数+1
             if (!articleService.updateLookQuantity(articleId))
                 articleService.updateLookQuantity(article.getArticleId());
@@ -188,8 +188,12 @@ public class ArticleController extends BaseController {
      */
     @GetMapping("/ga.itj")
     @ResponseBody
-    public ResponseResult<List<UserArticleVO>> getArticles(){
-        return new ResponseResult<>(4,articleService.queryArticles());
+    public ResponseResult<List<UserArticleVO>> getArticles(@RequestParam("s")Integer s,@RequestParam("e")Integer e){
+        List<UserArticleVO> list = articleService.queryArticles(s, e);
+        if(list.size()<1){
+            return new ResponseResult<>(-1,"没有更多了哦");
+        }
+        return new ResponseResult<>(4, list);
     }
     /**
      * 文章排行榜

@@ -10,7 +10,7 @@
         <foreach collection="list" item="articleTags" open="(" close=");" separator="),(">
             #{articleTags.tagName}
         </foreach>
-        <selectKey resultType="java.lang.Integer" keyColumn="tag_id" order="BEFORE" keyProperty="tagId">
+        <selectKey resultType="java.lang.Integer" order="BEFORE" keyProperty="tagId">
             SELECT LAST_INSERT_ID() AS tagId;
         </selectKey>
     </insert>

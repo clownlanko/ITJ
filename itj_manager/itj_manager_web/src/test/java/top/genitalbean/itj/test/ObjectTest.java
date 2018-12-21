@@ -19,7 +19,7 @@ public class ObjectTest {
     @Autowired ArticleService articleService;
     @Test
     public void test(){
-        System.err.println(articleService.queryArticleByKeyword("客测"));
+        System.err.println(articleService.queryArticles(0,20));
     }
 
 }
