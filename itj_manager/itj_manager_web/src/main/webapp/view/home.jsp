@@ -42,7 +42,7 @@
     <p>个人所创<a href="http://www.genitalbean.top/TinyLove/" title="微爱">TinyLvoe</a> All rights reserved.</p>
     <p>汝若欢喜，所有功能免费使用.
         汝若不<br>欢喜或觉得功能不够强大,可以前往
-        GitHub:<br>http://www.github.com/kittycoco/ITJ.git
+        GitHub:<br>https://github.com/kittycoco/ITJ
         <br>赋予更强大的功能。
         也可以反馈邮箱:clownlanko@126.com</p>
     <textarea></textarea><br>

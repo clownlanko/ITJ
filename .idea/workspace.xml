@@ -7,95 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="630790a8-fcf9-457e-b91d-0b7c32bc0d82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/alipay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/backgrounds/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/backgrounds/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/backgrounds/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/backgrounds/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/backgrounds/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/backgrounds/background-editor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/backgrounds/background-reder.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/backgrounds/background-zero.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/branch.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/butterfly_tex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/lonely.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/wechatpay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/load-img.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/snap.svg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/tree.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ITJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ITJ.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/itj_manager_web_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/itj_manager_web_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/itj_manager_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/itj_manager_web_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_3_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_nodep_3_2_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_3_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_3_4_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_14.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_commons/itj_commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_commons/itj_commons.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_commons/src/main/java/top/genitalbean/itj/commons/util/IDFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/itj_commons/src/main/java/top/genitalbean/itj/commons/util/IDFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_dao/itj_manager_dao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_dao/itj_manager_dao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/mapper/ArticleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_dao/src/main/java/top/genitalbean/itj/dao/mapper/ArticleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_entity/itj_manager_entity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_entity/itj_manager_entity.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_service/itj_manager_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_service/itj_manager_service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/ArticleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/itj_manager_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/itj_manager_web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/ArticleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/ArticleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/TagMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/TagMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/zero.css" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/zero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/markdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/markdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/article.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/article.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/editor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/editor.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/zero.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/zero.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/test/java/top/genitalbean/itj/test/ObjectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/itj_manager/itj_manager_web/src/test/java/top/genitalbean/itj/test/ObjectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/itj_manager/itj_manager_entity/target/" />
     <ignored path="$PROJECT_DIR$/itj_manager/itj_manager_service/target/" />
@@ -156,27 +79,28 @@
     <session id="1149051840">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="18" />
-          <entry key="Image" value="8" />
+          <entry key="Image" value="9" />
           <entry key="JAVA" value="21" />
-          <entry key="JSP" value="20" />
+          <entry key="JSP" value="21" />
           <entry key="JavaScript" value="35" />
           <entry key="Markdown" value="1" />
           <entry key="Properties" value="1" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="2" />
           <entry key="TypeScript" value="1" />
-          <entry key="XML" value="11" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -185,9 +109,10 @@
           <entry key="JAVA" value="307" />
           <entry key="JSP" value="859" />
           <entry key="JavaScript" value="961" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="SQL" value="160" />
           <entry key="Scratch" value="694" />
-          <entry key="XML" value="69" />
+          <entry key="XML" value="70" />
         </counts>
       </usages-collector>
     </session>
@@ -196,7 +121,7 @@
     <favorites_list name="ITJ" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -245,7 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/js/article-reader.js" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/target/itj_manager_web-1.0/view/article.jsp" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/coderain.js" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/java/top/genitalbean/itj/web/interceptor/ArticleManage.java" />
@@ -283,7 +207,6 @@
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/article.css" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/snap.svg.js" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/home.css" />
-        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/home.jsp" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/test/java/top/genitalbean/itj/test/ObjectTest.java" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/TagMapper.xml" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_service/src/main/java/top/genitalbean/itj/service/impl/ArticleService.java" />
@@ -296,6 +219,8 @@
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/editor.jsp" />
         <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/pop_word.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/65f778a2-cec5-400b-8ed4-4a7bce535384/console.sql" />
+        <option value="$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/home.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -333,7 +258,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ITJ" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ITJ" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -359,7 +294,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -370,138 +304,18 @@
             <path>
               <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
+              <item name="itj_commons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="ITJ" type="462c0819:PsiDirectoryNode" />
               <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ITJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITJ" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="itj_manager_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -510,7 +324,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/itj_manager/server/default/log/moon/cas_log.log" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545408727643" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545409368626" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="MySQL&#10;GenericSQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
@@ -714,7 +528,8 @@
       <workItem from="1545333144250" duration="6403000" />
       <workItem from="1545339987907" duration="5202000" />
       <workItem from="1545369631024" duration="51000" />
-      <workItem from="1545369702719" duration="27487000" />
+      <workItem from="1545369702719" duration="27841000" />
+      <workItem from="1545447783906" duration="1302000" />
     </task>
     <task id="LOCAL-00001" summary="项目第二天">
       <created>1544420742941</created>
@@ -751,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545323479951</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="项目第9天&#10;竣工">
+      <created>1545409123738</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545409123738</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -787,7 +609,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248343000" />
+    <option name="totallyTimeSpent" value="249999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -801,7 +623,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.14171124" visible="true" weight="0.20255864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.14171124" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="1" sideWeight="0.85828876" side_tool="true" weight="0.20255864" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -850,7 +672,8 @@
     <MESSAGE value="项目第二天" />
     <MESSAGE value="项目第六天" />
     <MESSAGE value="项目第8天" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目第8天" />
+    <MESSAGE value="项目第9天&#10;竣工" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目第9天&#10;竣工" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/css/cherry-blossoms.css" />
@@ -878,15 +701,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/background1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/background2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/background3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/background1.jpg" />
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/background2.jpg" />
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/background3.jpg" />
     <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/backgrounds/background-editor.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -901,14 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="1" column="92" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="92" />
-          <folding>
-            <element signature="n#!!block;n#showInfo#0" />
-            <element signature="n#!!block;n#changePassword#0" />
-            <element signature="n#!!block;n#changeState#0" />
-            <element signature="n#!!block;n#queryArticle#0" />
-            <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#!!block;n#deleteArticle#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,11 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding>
-            <element signature="n#ConsoleSignature#0" />
-            <element signature="e#2072#2245#0" />
-            <element signature="n#Butterfly#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -973,11 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
-          <folding>
-            <element signature="n#!!block;n#markdownResover#0" />
-            <element signature="n#!!block;n#queryArticle#0" />
-            <element signature="n#!!block;n#thumbsUp#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -985,27 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
           <caret line="112" column="1" lean-forward="true" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_article_commont.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_article_commont.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://65f778a2-cec5-400b-8ed4-4a7bce535384/schema/itj/table/itj_article_commont.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="97" />
         </state>
       </provider>
     </entry>
@@ -1054,16 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <element signature="e#2087#2649#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/resources/mapper/ArticleCommontMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1085,18 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
           <caret line="68" column="63" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
-          <folding>
-            <element signature="n#insert#0;n#mapper#0;n#!!top" />
-            <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
-            <element signature="n#select#0;n#mapper#0;n#!!top" />
-            <element signature="n#select#1;n#mapper#0;n#!!top" />
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
-            <element signature="n#update#1;n#mapper#0;n#!!top" />
-            <element signature="n#select#3;n#mapper#0;n#!!top" />
-            <element signature="n#select#4;n#mapper#0;n#!!top" />
-            <element signature="n#parameterMap#0;n#mapper#0;n#!!top" />
-            <element signature="n#select#5;n#mapper#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1125,16 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="192" selection-start-line="192" selection-end-line="192" />
-          <folding>
-            <element signature="docComment;method#addBlog#0;class#ArticleController#0" />
-            <element signature="method#addBlog#0;class#ArticleController#0" />
-            <element signature="docComment;method#addImage#0;class#ArticleController#0" />
-            <element signature="method#addImage#0;class#ArticleController#0" />
-            <element signature="method#getArticleByUserId#0;class#ArticleController#0" />
-            <element signature="method#getArticleBuArticleId#0;class#ArticleController#0" />
-            <element signature="method#thumbsUp#0;class#ArticleController#0" />
-            <element signature="method#deleteArticle#0;class#ArticleController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,31 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!block;n#queryRankingList#0" />
-            <element signature="e#430#454#0" />
-            <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#!!block;n#seartch#0" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#!!top" expanded="true" />
-            <element signature="e#2115#3754#0" />
-            <element signature="e#3171#3752#0" />
-            <element signature="e#3805#3863#0" />
-            <element signature="e#3892#10496#0" />
-            <element signature="e#6826#7430#0" />
-            <element signature="e#7503#8178#0" />
-            <element signature="e#7532#7612#0" />
-            <element signature="e#8696#9481#0" />
-            <element signature="e#9508#9823#0" />
-            <element signature="e#9551#9710#0" />
-            <element signature="e#9847#10011#0" />
-            <element signature="e#10015#10136#0" />
-            <element signature="e#10200#10300#0" />
-            <element signature="e#10304#10377#0" />
-            <element signature="n#!!block;n#getDocumentTop#0" />
-            <element signature="n#!!block;n#getWindowHeight#0" />
-            <element signature="n#!!block;n#getScrollHeight#0" />
-            <element signature="e#10591#13169#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1174,33 +895,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
           <caret line="101" column="21" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
-          <folding>
-            <element signature="method#changePassword#0;class#UserController#0" />
-            <element signature="method#updateUserInfo#0;class#UserController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/editor/plugins/image-dialog/image-dialog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1764">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1764" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/js/pop_word.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="42" column="2" lean-forward="true" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!block;n#generateLetter#0" />
-            <element signature="n#!!block;n#generateColor#0" />
-            <element signature="n#!!block;n#generateStartPlacement#0" />
-            <element signature="n#!!block;n#loop#0" />
-            <element signature="n#!!block;n#getRandomArbitrary#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1226,11 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-956">
           <caret line="3666" column="13" selection-start-line="3666" selection-start-column="13" selection-end-line="3666" selection-end-column="13" />
-          <folding>
-            <element signature="e#708#723#0" />
-            <element signature="e#1273#2238#0" />
-            <element signature="e#2273#14124#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1247,6 +948,26 @@
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/view/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="44" column="51" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_commons/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itj_manager/itj_manager_web/src/main/webapp/img/logo.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
   <component name="masterDetails">
