@@ -1,0 +1,24 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background: url("../img/backgrounds/background-editor.jpg") no-repeat;
+}
+#back {
+	position: fixed;
+	margin-top: -15px;
+	margin-left: 5px;
+	width: 25px;
+	height: 27px;
+	border: 1px solid rgba(255,255,255,0.1);
+	background: rgba(255, 255, 255, 0.1) url(../img/back.png) no-repeat center;
+	background-size: 15px 15px;
+}
+canvas {
+	position: fixed;
+	/*background-color: #2C2827;*/
+}
+#editor *{
+	background-color: transparent;
+}
