@@ -1,5 +1,5 @@
 # ITJ 博客
-[![ITJ BLOG](https://github.com/kittycoco/ITJ/tree/master/itj_manager/itj_manager_web/src/main/webapp/img/logo.png "ITJ BLOG")](http://www.ginitalbean.top "ITJ BLOG")
+[![ITJ BLOG](https://github.com/kittycoco/ITJ/blob/master/itj_manager/itj_manager_web/src/main/webapp/img/logo.png "ITJ BLOG")](http://www.ginitalbean.top "ITJ BLOG")
 ## 个人所创，ITJ博客开源免费
 1. 开发支持
 > 开发工具InterJ idea,MySql数据库服务，HitGub项目版本管理，Maven项目搭建，SSM构建项目
